@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Taller 4</title>
+        </head>
+        <body>  
+            <h1>Operación de dos números</h1>  
+            <p>Por favor, introduce dos números:</p>  
+            <input id="num1"><br>  
+            <input id="num2">  
+            <button type="button" onclick="myFunction()">Calcular</button>  
+            <p id="calculando"></p>  
+            <script>  
+                function myFunction() {  
+                    var x,y,suma, resta, multiplica, divide, mod,text1, text2, tex3, text4, text;  
+                    x = document.getElementById("num1").value;  
+                    y = document.getElementById("num2").value;  
+                    if (isNaN(x) || isNaN(y)) {  
+                        text = "Es necesarios introducir dos números válidos";  
+                    } else {  
+                        //si no ponemos parseFloat concatenaría x con y
+                        suma=parseFloat(x)+parseFloat(y);  
+                        text1= suma;
+                        resta=parseFloat(x)-parseFloat(y);  
+                        text2= resta
+                        multiplica=parseFloat(x)*parseFloat(y);  
+                        text3= multiplica;
+                        divide=parseFloat(x)/parseFloat(y);  
+                        text4= divide; 
+                    }
+                    alert("El resultado de la Suma es: "+text1);
+                    alert("El resultado de la Resta es: "+text2);
+                    alert("El resultado de la Multiplicación es: "+text3);
+                    alert("El resultado de la División es: "+text4);
+                }
+            </script>  
+        </body>  
+    </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Taller 4</title>
+        </head>
+        <body>  
+            <h1>Conversión de Octal a Decimal</h1>  
+            <p>Por favor, introduce un número Octal:</p>  
+            <input id="num">  
+            <button type="button" onclick="myFunction()">Convertir</button> 
+            <script>  
+                function myFunction() {  
+                    var x,y,text,text1;  
+                    x = document.getElementById("num").value;  
+                    y = parseInt(x,8);
+                    text1 = parseInt(y,10);  
+                    if (text1 == text1){  
+                        alert("La conversión es: "+text1);  
+                    } else {  
+                        text = "Introducir un número Octal válido";
+                        alert(text);
+                    }
+                }
+            </script>  
+        </body>  
+    </html>
